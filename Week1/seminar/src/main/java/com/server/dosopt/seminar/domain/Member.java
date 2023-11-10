@@ -8,14 +8,14 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Member {
+public class Member extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String nickname;
-    private int age;
+    private int age; // age에 int 사용. short를 사용해도 좋을지도?
 
     @Embedded
     private SOPT sopt;

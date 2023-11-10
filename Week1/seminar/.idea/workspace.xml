@@ -4,31 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5325e148-c5cb-43d4-8245-86e2956cdebb" name="Changes" comment="[#1] 1차 세미나 코드">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/Part.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/SOPT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/request/MemberCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/response/MemberGetResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/reposiotry/MemberJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="5325e148-c5cb-43d4-8245-86e2956cdebb" name="Changes" comment="[#3] HealthCheckResponse Record 클래스로 변경">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/config/JpaAuditingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/request/post/PostCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/response/PostGetResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/reposiotry/PostJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/ServerSeminarApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/ServerSeminarApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/controller/HealthCheckController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/controller/HealthCheckController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HealthCheckController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/domain/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/domain/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/dto/request/MemberCreateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/dto/response/HealthCheckResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/dto/response/HealthCheckResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/server/dosopt/seminar/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HealthCheckController.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HealthCheckResponse.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Member$MemberBuilder.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Member.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberJpaRepository.class.uniqueId3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/HealthCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/HealthCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/HealthCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/response/HealthCheckResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/sample/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/ServerSeminarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/ServerSeminarApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/request/MemberCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/request/member/MemberCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/response/HealthCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/dto/response/HealthCheckResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/dosopt/seminar/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -56,6 +87,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +95,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$/../.." value="second_seminar/#3" />
         <entry key="$PROJECT_DIR$" value="75aeae348a2cd180831cb310bd1aeca49b2783e5" />
       </map>
     </option>
@@ -89,23 +122,24 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fist__seminar/#1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;seminar/#3&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mihye/Desktop/SOPT/과제/mmihye/Week1/seminar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24482758&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;0b92280df95def67f05c696c1e7d4f22&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="ServerSeminarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="seminar.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.server.dosopt.seminar.ServerSeminarApplication" />
       <method v="2">
@@ -130,6 +164,8 @@
       <workItem from="1697264042597" duration="1881000" />
       <workItem from="1697267185948" duration="6369000" />
       <workItem from="1697463340815" duration="715000" />
+      <workItem from="1698306783885" duration="14688000" />
+      <workItem from="1699017543016" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="[#1] 1차 세미나 코드">
       <created>1696910825803</created>
@@ -138,7 +174,28 @@
       <option name="project" value="LOCAL" />
       <updated>1696910825803</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[#3] 두번째 세미나 코드">
+      <created>1698411256419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698411256419</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[#3] 두번째 세미나 코드">
+      <created>1698411363171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698411363171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[#3] HealthCheckResponse Record 클래스로 변경">
+      <created>1698413485256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698413485256</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +212,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="seminar_first/#1" />
+                        <option value="seminar/#3" />
                       </list>
                     </value>
                   </entry>
@@ -169,6 +226,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[#1] 1차 세미나 코드" />
-    <option name="LAST_COMMIT_MESSAGE" value="[#1] 1차 세미나 코드" />
+    <MESSAGE value="[#3] 두번째 세미나 코드" />
+    <MESSAGE value="[#3] HealthCheckResponse Record 클래스로 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="[#3] HealthCheckResponse Record 클래스로 변경" />
   </component>
 </project>
