@@ -21,10 +21,16 @@ public class HealthCheckController {
         return response;
     }
 
+//    {
+//        "status": "OK"
+//    }
+
     @GetMapping("/v2")
     public ResponseEntity<String> healthCheckV2() {
         return ResponseEntity.ok("ok");
     }
+
+    // OK
 
     @GetMapping("/v3")
     public String healthCheckV3(){
@@ -38,6 +44,8 @@ public class HealthCheckController {
         return "OK";
     }
 
+    // OK
+
     @GetMapping("/v4")
     public ResponseEntity<Map<String, String>> healthCheckV4() {
         Map<String, String> response = new HashMap<>();
@@ -45,9 +53,17 @@ public class HealthCheckController {
         return ResponseEntity.ok(response);
     }
 
+//    {
+//        "status": "OK"
+//    }
+
     @GetMapping("/v5")
         public ResponseEntity<HealthCheckResponse> healthCheckV5(){
             return ResponseEntity.ok(new HealthCheckResponse());
         }
+
+//    {
+//        "status": "OK"
+//    }
 
 }
