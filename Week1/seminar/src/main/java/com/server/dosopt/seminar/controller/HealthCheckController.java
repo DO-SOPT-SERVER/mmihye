@@ -57,10 +57,10 @@ public class HealthCheckController {
 //        "status": "OK"
 //    }
 
-    @GetMapping("/v5")
-        public ResponseEntity<HealthCheckResponse> healthCheckV5(){
-            return ResponseEntity.ok(new HealthCheckResponse());
-        }
+//    @GetMapping("/v5")
+//        public ResponseEntity<HealthCheckResponse> healthCheckV5(){
+//            return ResponseEntity.ok(new HealthCheckResponse());
+//        }
 
 //    {
 //        "status": "OK"
