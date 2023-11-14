@@ -1,6 +1,7 @@
 package com.server.dosopt.seminar.controller;
 
 import com.server.dosopt.seminar.dto.HealthCheckResponse;
+import com.server.dosopt.seminar.dto.StatusEnum;
 import com.server.dosopt.seminar.sample.Person;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -66,4 +67,14 @@ public class HealthCheckController {
 //        "status": "OK"
 //    }
 
+    @GetMapping("/v6")
+    public ResponseEntity<HealthCheckResponse> healthCheckV6(){
+        return ResponseEntity.ok(new HealthCheckResponse(StatusEnum.OK));
+    }
+
+//    {
+//        "code": 200,
+//            "status": "OK",
+//            "success": true
+//    }
 }
