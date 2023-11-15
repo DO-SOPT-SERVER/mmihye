@@ -1,7 +1,9 @@
 package com.server.dosopt.seminar.service;
 
 import com.server.dosopt.seminar.domain.Member;
+import com.server.dosopt.seminar.domain.SOPT;
 import com.server.dosopt.seminar.dto.request.MemberCreateRequest;
+import com.server.dosopt.seminar.dto.request.MemberProfileUpdateRequest;
 import com.server.dosopt.seminar.dto.response.MemberGetResponse;
 import com.server.dosopt.seminar.reposiotry.MemberJpaRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -32,7 +34,7 @@ public class MemberService {
 
 
     public MemberGetResponse getByIdV2(Long memberId) {
-        return MemberGetResponse.of(memberJpaRepository.findByIdOrThorw(memberId));
+        return MemberGetResponse.of(memberJpaRepository.findByIdOrThrow(memberId));
     }
 
     public List<MemberGetResponse> getMembers(){
@@ -63,5 +65,12 @@ public class MemberService {
                 () -> new EntityNotFoundException("해당하는 회원이 없습니다.")
         );
     }
+
+    @Transactional
+    public void updateSOPT(Long memberId, MemberProfileUpdateRequest request) {
+        Member member = memberJpaRepository.findByIdOrThrow(memberId);
+        member.updateSOPT(new SOPT(request.getGeneration(), request.getPart()));
+    }
+
 
 }
