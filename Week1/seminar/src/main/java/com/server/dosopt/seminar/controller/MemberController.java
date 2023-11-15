@@ -55,6 +55,14 @@ public class MemberController {
     }
 
 
+    // 삭제
+    @DeleteMapping("/{memberId}")
+    public ResponseEntity deleteMember(@PathVariable Long memberId) {
+        memberService.deleteMember(memberId);
+        return ResponseEntity.noContent().build();
+    }
+
+
 
 
 
