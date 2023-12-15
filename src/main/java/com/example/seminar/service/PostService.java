@@ -19,8 +19,8 @@ public class PostService {
     @Transactional
     public void create(PostRequest request) {
         PostEntity post = PostEntity.builder()
-                .title(request.title)
-                .content(request.content)
+                .title(request.title())
+                .content(request.content())
                 .build();
         postJpaRepository.save(post);
     }

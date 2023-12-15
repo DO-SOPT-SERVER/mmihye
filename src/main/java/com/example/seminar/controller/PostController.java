@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PostController {
 
     private final PostService postService;
-ㅇ
+
     @PostMapping
     public ResponseEntity<Void> createPost(@Valid @RequestBody PostRequest request) {
         postService.create(request);
